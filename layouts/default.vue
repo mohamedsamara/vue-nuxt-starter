@@ -15,8 +15,8 @@ import {
   CThemeProvider,
   CColorModeProvider,
   CReset,
-  CBox,
-} from '@chakra-ui/vue'
+  CBox
+} from '@chakra-ui/vue';
 
 export default {
   name: 'App',
@@ -24,7 +24,7 @@ export default {
     CThemeProvider,
     CColorModeProvider,
     CReset,
-    CBox,
-  },
-}
+    CBox
+  }
+};
 </script>
