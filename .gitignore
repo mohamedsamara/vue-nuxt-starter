@@ -90,3 +90,7 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Prisma DB
+prisma/sqlite.db
+prisma/sqlite.db-journal
