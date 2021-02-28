@@ -2,7 +2,7 @@
   <div class="container">
     <CThemeProvider>
       <CColorModeProvider>
-        <CBox font-family="body" as="main">
+        <CBox font-family="body" as="main" class="main">
           <CReset />
           <Nuxt />
         </CBox>
@@ -28,3 +28,10 @@ export default {
   }
 };
 </script>
+
+<style>
+html,
+body {
+  height: 100%;
+}
+</style>
