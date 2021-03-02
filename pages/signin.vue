@@ -60,6 +60,9 @@ export default {
       }
     };
   },
+  head: {
+    title: 'Sign In'
+  },
   methods: {
     async userSignin() {
       try {

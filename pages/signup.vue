@@ -66,6 +66,9 @@ export default {
       }
     };
   },
+  head: {
+    title: 'Sign Up'
+  },
   methods: {
     async userRegister() {
       try {

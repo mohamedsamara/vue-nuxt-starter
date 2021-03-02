@@ -1,4 +1,19 @@
-# nuxt-example
+# Vue Nuxt Starter
+
+## Features
+
+<dl>
+<dt>Libraries Used</dt>
+
+- [NuxtJS](https://nuxtjs.org/)
+
+- [Nuxt Auth](https://auth.nuxtjs.org/)
+
+- [Prisma](https://www.prisma.io/)
+
+- [Chakra UI](https://vue.chakra-ui.com/)
+
+</dl>
 
 ## Build Setup
 

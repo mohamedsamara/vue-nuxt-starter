@@ -15,7 +15,12 @@
     "type": "git",
     "url": "git+https://github.com/mohamedsamara/vue-nuxt-starter.git"
   },
-  "keywords": [],
+  "keywords": [
+    "nuxt",
+    "nuxt-auth",
+    "prisma",
+    "chakra-ui"
+  ],
   "author": "Mohamed Samara (https://github.com/mohamedsamara)",
   "license": "MIT",
   "bugs": {

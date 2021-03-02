@@ -3,3 +3,10 @@
     <c-heading as="h1" size="lg" text-align="center">Home Page</c-heading>
   </c-flex>
 </template>
+<script>
+export default {
+  head: {
+    title: 'Homepage'
+  }
+};
+</script>
