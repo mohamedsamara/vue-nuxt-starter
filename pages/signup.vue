@@ -69,15 +69,38 @@ export default {
   methods: {
     async userRegister() {
       try {
-        await this.$axios.post('/api/auth/signup', {
+        const response = await this.$axios.post('/api/auth/signup', {
           ...this.register
         });
+
+        if (!response.data.success) {
+          return this.$toast({
+            title: 'Sign up error.',
+            description: 'Unable to create account. Please try again.',
+            status: 'error',
+            duration: 10000
+          });
+        }
 
         await this.$auth.loginWith('local', {
           data: { ...this.register }
         });
+
+        this.$toast({
+          title: 'Account created.',
+          description: "We've created your account for you.",
+          status: 'success',
+          duration: 10000
+        });
+
         this.$router.push('/');
       } catch (err) {
+        this.$toast({
+          title: 'Sign up error.',
+          description: 'Unable to create account. Please try again.',
+          status: 'error',
+          duration: 10000
+        });
         this.$router.push('/signin');
       }
     }

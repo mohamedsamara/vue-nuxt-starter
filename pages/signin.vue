@@ -69,6 +69,12 @@ export default {
 
         this.$router.push('/');
       } catch (err) {
+        this.$toast({
+          title: 'Sign in error.',
+          description: 'Unable to sign in. Please try again.',
+          status: 'error',
+          duration: 10000
+        });
         this.$router.push('/signin');
       }
     }
