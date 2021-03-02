@@ -4,7 +4,7 @@
       <CColorModeProvider>
         <CBox font-family="body" as="main" class="main">
           <CReset />
-          <Header />
+          <Header hidden-auth />
           <Nuxt />
         </CBox>
       </CColorModeProvider>

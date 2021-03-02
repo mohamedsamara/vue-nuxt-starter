@@ -36,9 +36,14 @@
           />
         </c-form-control>
 
-        <c-button type="submit" variant-color="blue" w="100%" mt="4"
+        <c-button type="submit" variant-color="blue" w="100%" my="4"
           >Sign In</c-button
         >
+
+        <p class="text-center">
+          Don't have an account?
+          <c-link as="router-link" to="/signup"> Sign Up </c-link>
+        </p>
       </form>
     </c-box>
   </c-flex>
@@ -46,6 +51,7 @@
 
 <script>
 export default {
+  layout: 'auth',
   data() {
     return {
       signin: {
@@ -65,12 +71,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.main {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-}
-</style>
