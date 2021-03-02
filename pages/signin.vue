@@ -66,7 +66,11 @@ export default {
         await this.$auth.loginWith('local', {
           data: this.signin
         });
-      } catch (err) {}
+
+        this.$router.push('/');
+      } catch (err) {
+        this.$router.push('/signin');
+      }
     }
   }
 };

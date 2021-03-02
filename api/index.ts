@@ -71,6 +71,11 @@ app.get('/auth/user', auth, async (req: AuthRequest, res: express.Response) => {
   res.json({ user });
 });
 
+// signout api
+app.post('/auth/signout', async (_, res: express.Response) => {
+  res.json({ success: true });
+});
+
 export default {
   path: '/api',
   handler: app
