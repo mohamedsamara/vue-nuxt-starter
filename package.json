@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-example",
+  "name": "vue-nuxt-starter",
   "version": "1.0.0",
-  "description": "Vue Nuxt",
+  "description": "Vue Nuxt Starter",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
